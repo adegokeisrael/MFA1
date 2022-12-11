@@ -12,6 +12,9 @@ This system attempts to cater for the underlining vulnerabilities of common MFAs
 * SMS MITM/ SIM swap attack
 *Attacks on Hard and Soft tokens
 
+### architerture
+![u2f-protocol](https://user-images.githubusercontent.com/47308654/206934475-24d1abf8-bcf9-4c49-aaba-bc7c13abcb1b.png)
+
 
 Installation
 ------------
