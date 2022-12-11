@@ -6,7 +6,7 @@ The FIDO U2F protocol enables relying parties to offer a strong cryptographic 2n
 
 ### why this strategy?
 
-This system to solves major problem associated with the vulnerabilities of common MFAs with rise in the unrelibility of these MFAs (Authy and Google Authenticator). This could include attacks like:
+This system solves major and common problems associated with the vulnerabilities of common MFAs with rise in the unrelibility of these MFAs (Authy and Google Authenticator). This could include attacks like:
 
 * Evilginx : a for of MITM (Man in the Middle attack)
 * pass the cookie
