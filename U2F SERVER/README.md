@@ -6,7 +6,7 @@ The FIDO U2F protocol enables relying parties to offer a strong cryptographic 2n
 
 ### why this strategy?
 
-This system attempts to cater for the underlining vulnerabilities of common MFAs with the rise in the unrelibility of MFAs like Authy and Google Authenticator. this could include attacks like:
+This system to solves major problem associated with the vulnerabilities of common MFAs with rise in the unrelibility of these MFAs (Authy and Google Authenticator). This could include attacks like:
 
 * Evilginx : a for of MITM (Man in the Middle attack)
 * pass the cookie
@@ -26,7 +26,7 @@ Make sure you have node.js install on your machine.  Clone the source code from 
 npm install
 ```
 
-Note that the demo uses https connections. A sample self-signed certificate is included.  You can generate your own self-signed certificate by
+Note that these implementation uses https connections. A sample self-signed certificate is included.  You can generate your own self-signed certificate by
 ```
 openssl ecparam -genkey -out sslcert/private-key.pem -name prime256v1
 openssl req -x509 -new -key sslcert/private-key.pem -out sslcert/server.pem
