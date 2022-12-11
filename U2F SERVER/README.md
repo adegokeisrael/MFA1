@@ -1,7 +1,17 @@
 u2f-sample-server
 ==================
 
-A simple node.js server setup to demonstrate the [Fido U2F authentication](https://fidoalliance.org/about/overview/).
+This project implements A node.js server setup enabling the [Fido U2F authentication](https://fidoalliance.org/about/overview/), a Multi-factor Authentication (MFA) is an authentication method that requires the user to provide more than a username and password, MFA requires one or more additional verification factors, which decreases the likelihood of a successful cyber attack. it is a 2 factor authenticator with the "what you know" and "what you have" factors.
+
+### why this strategy?
+
+This system attempts to cater for the underlining vulnerabilities of common MFAs with the rise in the unrelibility of MFAs like Authy and Google Authenticator. this could include attacks like:
+
+* Evilginx : a for of MITM (Man in the Middle attack)
+* pass the cookie
+* SMS MITM/ SIM swap attack
+*Attacks on Hard and Soft tokens
+
 
 Installation
 ------------
