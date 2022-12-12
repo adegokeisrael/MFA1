@@ -1,1 +1,1 @@
-# Universal second factor
+# Universal Second Factor Authenticator
