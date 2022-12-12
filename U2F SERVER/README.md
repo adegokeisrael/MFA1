@@ -1,7 +1,7 @@
 u2f-authenticator implementation
 ==================
 
-This project implements A node.js server setup for the [Fido U2F authentication](https://fidoalliance.org/about/overview/). A Multi-factor Authentication (MFA) is an authentication method that requires the user to provide more than a username and password, MFA requires one or more additional verification factors, with aim to decrease the likelihood of a successful cyber attack. This implementation is a 2 factor authenticator with the "what you know" and "what you have" factors.
+This project implements A node.js served [Fido U2F authentication](https://fidoalliance.org/about/overview/) phishing-resistant MFA. A Multi-factor Authentication (MFA) is an authentication method that requires the user to provide more than a username and password, MFA requires one or more additional verification factors, with aim to decrease the likelihood of a successful cyber attack. This implementation is a 2 factor authenticator with the "what you know" and "what you have" factors.
 The FIDO U2F protocol enables relying parties to offer a strong cryptographic 2nd factor option for end user security. The relying party's dependence on passwords is reduced. The password can even be simplified to a 4 digit PIN. End users carry a single U2F device which works with any relying party supporting the protocol. The user gets the convenience of a single 'keychain' device and convenient security.
 
 ### why this strategy?
