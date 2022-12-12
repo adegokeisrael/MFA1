@@ -1,12 +1,12 @@
 u2f-authenticator implementation
 ==================
 
-This project implements A node.js served [Fido U2F authentication](https://fidoalliance.org/about/overview/) phishing-resistant MFA. A Multi-factor Authentication (MFA) is an authentication method that requires the user of a service to provide more than a username and password, MFA requires one or more additional verification factors, with aim to decrease the likelihood of a successful cyber attack. This implementation is a 2 factor authenticator with the "what you know" and "what you have" factors.
+This project implements A node.js served [Fido U2F authentication](https://fidoalliance.org/about/overview/) phishing-resistant MFA. A Multi-factor Authentication (MFA) is an authentication method that requires the user of a service to provide more than a username and password for service access. MFA requires one or more additional verification factors, with aim to decrease the likelihood of a successful cyber attack. This implementation provides a  second factor authentication to the regular email and password scheme.
 The FIDO U2F protocol enables relying parties to offer a strong cryptographic 2nd factor option for end user security. The relying party's dependence on passwords is reduced. The password can even be simplified to a 4 digit PIN. End users carry a single U2F device which works with any relying party supporting the protocol. The user gets the convenience of a single 'keychain' device and convenient security.
 
 ### why this strategy?
 
-This implementation solves major and common problems associated with the vulnerabilities of common MFAs with rise in the unrelibility of these MFAs (Authy and Google Authenticator). These MFA are prone to attacks like:
+This implementation solves major and common problems associated with the vulnerabilities of common MFAs with rise in the unrelibility of these MFAs (Authy and Google Authenticator). These MFA are prone to attacks such as:
 
 * Evilginx : a form of MITM (Man in the Middle attack)
 * pass the cookie attack 
