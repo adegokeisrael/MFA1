@@ -88,6 +88,6 @@ Note that each registration requires a new key pair from the token.  Some tokens
 
 But some tokens (e.g. the one I have from [HyperFIDO](https://www.hypersecu.com/hyperfido)) only support limited number of key pairs (64 pairs for HyperFIDO). Once over the limit, you won't be able to register the token with any new sites.  Some vendors do provide a reset program for you to wipe the token though.
 
-### What should change in production
-  * signing of certificate will be done by a trust certificate authority.
+### What will change in production?
+  * signing of certificate will be done by a trusted certificate authority.
   * client application could be written in any framework from reactjs to vuejs and react naitive for mobile app. 
