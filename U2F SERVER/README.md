@@ -1,4 +1,4 @@
-u2f-authentication implementation
+u2f-authenticator implementation
 ==================
 
 This project implements A node.js server setup for the [Fido U2F authentication](https://fidoalliance.org/about/overview/), a Multi-factor Authentication (MFA) is an authentication method that requires the user to provide more than a username and password, MFA requires one or more additional verification factors, which decreases the likelihood of a successful cyber attack. This implementation is a 2 factor authenticator with the "what you know" and "what you have" factors.
@@ -6,12 +6,12 @@ The FIDO U2F protocol enables relying parties to offer a strong cryptographic 2n
 
 ### why this strategy?
 
-This system solves major and common problems associated with the vulnerabilities of common MFAs with rise in the unrelibility of these MFAs (Authy and Google Authenticator). This could include attacks like:
+This implementation solves major and common problems associated with the vulnerabilities of common MFAs with rise in the unrelibility of these MFAs (Authy and Google Authenticator). These MFA are prone to attacks like:
 
-* Evilginx : a for of MITM (Man in the Middle attack)
-* pass the cookie
-* SMS MITM/ SIM swap attack
-*Attacks on Hard and Soft tokens
+* Evilginx : a form of MITM (Man in the Middle attack)
+* pass the cookie attack 
+* SMS MITM/ SIM swap attack (in the case of SMS based OTP.)
+* Attacks on Hard and Soft tokens
 
 ### architerture
 ![u2f-protocol](https://user-images.githubusercontent.com/47308654/206934475-24d1abf8-bcf9-4c49-aaba-bc7c13abcb1b.png)
@@ -88,6 +88,6 @@ Note that each registration requires a new key pair from the token.  Some tokens
 
 But some tokens (e.g. the one I have from [HyperFIDO](https://www.hypersecu.com/hyperfido)) only support limited number of key pairs (64 pairs for HyperFIDO). Once over the limit, you won't be able to register the token with any new sites.  Some vendors do provide a reset program for you to wipe the token though.
 
-### What could change in production
-  signing of certificate will be done by a trust certificate authority.
-  client application could be written in any framework from reactjs to vuejs and react naitive for mobile app. 
+### What should change in production
+  * signing of certificate will be done by a trust certificate authority.
+  * client application could be written in any framework from reactjs to vuejs and react naitive for mobile app. 
