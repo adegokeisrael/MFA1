@@ -52,7 +52,8 @@ You can then simulate:
 
 You will be able to see the U2F messages passed between the server and token.
 
-![screenshot](https://3.bp.blogspot.com/-wKHw9zu5T5w/VyWV4H8ggPI/AAAAAAAACek/wd4tFYuwT5s5tVQFamU3B0mL13QYbHxqACLcB/s640/screenshot01.png "screenshot")
+![Capture](https://user-images.githubusercontent.com/47308654/212582262-f37a2fca-0488-4de5-82b4-f31383d2fd27.PNG)
+
 
 ### Registration
 
