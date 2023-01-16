@@ -3,15 +3,34 @@ doctype html
 html
   head
     meta(charset="utf-8")
+    link(rel="stylesheet" href="css/bootstrap.css")
     link(rel="stylesheet" href="css/demo.css")
     link(rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css")
 
-    title U2F Demo Application
+    style.
+      body {
+        
+        text-align: center;
+        margin-top: 0px;
+        
+      }
+      #keycontainer{
+        text-align: center;
+      }
+      h1{
+        text-transform: uppercase;
+      }
+      
 
-    script(src="//code.jquery.com/jquery-2.2.3.min.js")
+
+    title U2F Authentication.
+
+    script(src="js/jquery.min.js")
     script(src="//code.jquery.com/ui/1.11.4/jquery-ui.js")
     script(src="js/u2f-api.js")
     script(src="js/util.js")
+
+    
 
     script.
       var U2F_TIMEOUT_SEC = 30;   // U2F API call timeout in sec
@@ -117,23 +136,25 @@ html
 
 
   body
-    h1  U2F Demo Application
 
-    button(onclick="beginEnroll();") Simulate server requests token registration
-    p/
+    div#all
+      h2  Authenticate With Your Key. 
 
-    p Key handles of registered token will be shown here.  For this demo, you can register the same token multiple times.
-    table#keycontainer.keylist
-      thead
-        tr
-          th
-            div.keyHandle
-              |Key Handles
-          th
-            |Simulate Authenticate
-      tbody
-    p/
+      button.btn.btn-brand(onclick="beginEnroll();") Make server requests for token registration
+      p/
 
-    p Messages:
-    div.wrapper(id="wrapper")
-      div.logger(id="logger")
+      p Key handles of registered token will be shown here.  For this demo, you can register the same token multiple times.
+      table#keycontainer.keylist
+        thead
+          tr
+            th
+              div.keyHandle
+                |Key Handles
+            th
+              |Simulate Authenticate
+        tbody
+      p/
+
+      p Messages:
+      div.wrapper(id="wrapper")
+        div.logger(id="logger")
