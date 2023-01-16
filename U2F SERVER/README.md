@@ -71,17 +71,9 @@ For this demo, the registration data is stored in session only.  In real life ap
 
 To simulate an authentication event, click on the button next to a particular keyHandle.  The server will generate a challenge in which the browser will pass to the token.  Again, plug in the token or click on the button on the token to sign the challenge. The response will be sent to server to validate and complete the authentication.
 
-Note that in real life the token is used as a two-factor authentication device.  So normally the server will trigger such authentication after the initial user/password authentication.
+In production, the token is used as a two-factor authentication device.  So normally the server will trigger such authentication after the initial user/password authentication.
 
-*If your token failed to process the authentication challenge, try to modify [node-u2flib-server](https://github.com/kitsook/node-u2flib-server/blob/master/lib/u2f.js#L195) to change the base64 encoded string*
 
-```
-var base64_to_RFC4648 = function(input) {
-  // RFC 4648 uses '-' instead of '+', and '_' instead of '/'.
-  // Also remove the padding '='
-  return input.replace(/\+/g, '-').replace(/\//g, '_').replace(/\=/g, '');
-}
-```
 
 ### !!! Caution !!!
 
