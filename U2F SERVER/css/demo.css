@@ -9,6 +9,9 @@ h1,h2,h3,h4,h5,h6, p{
   letter-spacing: 2px;
   color: #ffffff;
 }
+h1{
+  border-top: 20px;
+}
 
 div.all{
   margin-top: 20px;
@@ -75,10 +78,10 @@ div.keyHandle
 }
 
 body {
-  background-image: url('cover.jpg');
+  background-image: url('Colorful_background.jpg');
   position: relative;
   z-index: 2;
-  height: 100vh;
+  height: 150vh;
   background-size: cover;
   background-position: center;
   display: flex;
