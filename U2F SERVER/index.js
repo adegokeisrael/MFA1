@@ -144,5 +144,6 @@ var server = https
     var host = server.address().address;
     var port = server.address().port;
 
-    console.log("U2F demo app started at https://%s:%s/demo", host == "127.0.0.1" ? 'localhost' : host, port);
+    console.log("U2F demo app started at https://localhost:4430/demo");
 });
+
